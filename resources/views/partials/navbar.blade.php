@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand navbar-dark bg-primary">
+<nav class="navbar navbar-expand navbar-dark bg-primary fixed-top">
     <div class="container-fluid">
 
         <!-- Hamburger toggler untuk mobile/tablet -->
