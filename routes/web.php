@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ReportController;
 
 Route::redirect('/', '/login', 301);
@@ -18,3 +19,5 @@ Route::post('reports/{id}/update', [ReportController::class, 'update'])->name('r
 Route::delete('reports/{id}', [ReportController::class, 'destroy'])->name('reports.destroy');
 Route::get('reports/create', [ReportController::class, 'create'])->name('reports.create');
 Route::post('reports', [ReportController::class, 'store'])->name('reports.store');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
